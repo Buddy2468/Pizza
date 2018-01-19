@@ -154,3 +154,10 @@ body    {
     }
     
 }
+@media only screen and (min-width: 1096px){
+    .container{
+        width: 1080px;
+        margin: auto;
+    }
+    
+}
