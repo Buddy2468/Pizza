@@ -1,0 +1,156 @@
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+header a{
+    text-decoration: none;
+    color: black
+}
+.Kopf{
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    margin: 0.5em;
+    padding: 1em;
+    
+}
+body{
+    background-image: url(Media/depositphotos_12950331-stock-photo-cheese-bread-pizza-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+ul{
+    padding: 0;
+    margin: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+li{
+    list-style: none;
+    margin: 1em;
+}
+li a{
+    border-color: grey;
+    text-decoration: none;
+    
+    
+    
+}
+li a:link{
+    border-style: outset;
+    background-color: rgba(5,5,5,0.5);
+    color: black;
+}
+li a:visited{
+    border-style: inset;
+    background-color: rgba(5,5,5,0.5);
+    color:black;
+}
+li a:hover{
+    color:white;
+    border-style: inset;
+}
+.TextInhalt{
+    
+}
+footer{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    background-color: aliceblue;
+    margin: 0.5em;
+    padding: 1em;
+}
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}   
+.container{
+    display: grid;
+    grid-template-columns: auto 70% 10em;
+    grid-template-rows: auto auto  auto;
+    grid-template-areas: "header header header" "nav main werbung" "footer footer footer";
+    
+}
+nav{
+    grid-area: nav;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    margin: 0.5em;
+    
+}
+main{
+    grid-area: main;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    background-color: aliceblue;
+    background-size: 100% 100%;
+    margin: 0.5em;
+    padding: 2em;
+}
+footer{
+    grid-area: footer;
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: werbung;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    background-color: aliceblue;
+    background-size: 100% 100%;
+    margin: 0.5em;
+    padding: 2em;
+}
+header a img{
+    position: absolute;
+}
+body    {
+    overflow-y:scroll;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto  auto auto;
+        grid-template-areas: "header" "nav" "main" "footer";
+    }
+    li{
+        display: inline;
+    }
+    ul{
+        margin:1em;
+        text-align: center;
+        margin-left: 0.5em;
+    }
+    li a:hover{
+        border-style: none;
+    }
+    li a:link{
+        border-style: none;
+        background-color: aliceblue;
+    }
+    li a:visited{
+        border-style: none;
+        background-color: aliceblue;
+    }
+    aside{
+        position: fixed;
+        bottom: 1em;
+        box-shadow: none;
+        background-color: aliceblue;
+        background-size: 100% 100%;
+        width: 100%;
+        margin: 0em;
+        padding: 1em;
+        margin-left: -0.5em;
+        margin-bottom: -1em;
+        
+    }
+    footer{
+        margin-bottom: 3em;
+    }
+    
+}
